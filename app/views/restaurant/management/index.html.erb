@@ -1,0 +1,16 @@
+<%@page_title = "Restaurant Admin"%>
+
+ <div class="menu">
+   <h2>Menu  de Tareas</h2>
+
+   <ul>
+     <li><%= link_to("Administrar Menus", nil) %></li>
+     <li><%= link_to("Administrar Platillos", :controller =>'/restaurant/dishes') %></li>
+     <li><%= link_to("Administrar zona entrega",nil) %></li>
+     <li><%= link_to("Administrar imprimir", nil) %></li>
+     <br />
+
+    <li><%= link_to("Logout", destroy_admin_session_path, :method => :delete) %></li>
+   </ul>
+
+      </div>

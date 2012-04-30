@@ -1,0 +1,21 @@
+<% if notice %>
+<div id="notice"><%= notice %></div>
+ <div id="login" >  <%= link_to("Logout", destroy_user_session_path, :method => :delete) %>  </div>
+<% end %>
+<% @dishes.each   do |dish| %>
+
+
+<div class="dish">
+<h3><%= dish.name %></h3>
+  <div class="price">
+  <strong><%= dish.price %>    </strong>
+  </div>
+  <p>
+<%= sanitize(dish.description) %></p>
+ </div>
+
+          <% end %>
+
+
+
+

@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Documento sin título</title>
+<%= stylesheet_link_tag    "application" %>
+
+ <%= javascript_include_tag "application" %>
+
+
+ <%= csrf_meta_tags %>
+
+</head>
+
+<body class='<%= controller.controller_name %>'>
+
+<div id="fondo">
+<div id="wrapper">
+<div id="header">
+
+<div id="logo">
+
+<%= image_tag "logo.png", options: alt='Logotipo OrdenaComida'  %>
+   	</div>
+		<div id="menu">
+		<ul>
+             <li><%= link_to("Inicio", '/') %></li>
+             <li><%= link_to("Ayuda", nil) %></li>
+             <li><%= link_to("Mi cuenta", nil) %></li>
+             <li><%= link_to("Registro", nil) %></li>
+             <li><%= link_to("Restaurantes", '/restaurant/panel') %></li>
+             <li><%= link_to("Contacto", nil) %></li>
+		</ul>
+</div>
+
+</div>
+
+   <div id="contenido">
+<div id="columnamain">
+
+           <%= yield %>
+	</div>
+
+	<div id="columnaright">
+       <h3 class="titulo_right">Titulos</h3>
+         <div id="map_canvas" style="width: 600px; height: 500px;">
+                    google map here!!
+
+                      </div>
+
+
+       </div>
+</div>
+
+<div id="footer">
+		<div id="redes">
+			<%= image_tag "mexico.png", option: alt="Mexico", class: 'ico_image' %>
+		<a href="http://www.facebook.com/" target="_blank" >
+<%= image_tag"facebook.png" , option: alt="Mexico", class: 'ico_image' %></a>
+			<a href="#" target="_blank" >
+              <%= image_tag"twitter.png", option: alt="Mexico", class: 'ico_image' %></a>
+	</div>
+OrdenaComida &copy; Todos los derechos reservados.
+
+
+
+   </div>
+</div>
+</div>
+</body>
+</html>

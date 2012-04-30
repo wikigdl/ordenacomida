@@ -1,0 +1,2 @@
+module Restaurant::DishesHelper
+end

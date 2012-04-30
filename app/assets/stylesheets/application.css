@@ -1,0 +1,202 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
+@charset "UTF-8";
+/* CSS Document */
+html{   background-image:
+    	url(fondo.jpg);
+    	background-repeat:no-repeat;
+	}
+
+body{ margin:0 auto; font-family:Arial, Helvetica, sans-serif; font-size:14px;
+   }
+
+
+#fondo{ background-color:#6d1b0f; width:100%; height:200px; top:0px;
+left:0px; position:absolute; z-index:-1;
+    box-shadow: 0px 2px 10px 2px #000; ;}
+
+
+
+
+#wrapper{ margin:0 auto;  width:1024px; height:auto; }
+
+#header{ width:1024px; height:210px; background-color:#6d1b0f; border-top:solid 30px #eff4f9;
+box-shadow: 0px 2px 10px 2px #000; ;
+}
+
+#logo{ margin:0 auto; width:484px; height:140px; margin-top:20px;}
+
+#menu{
+	width:680px;
+	height:50px;
+	margin:0 auto;
+	font-size:13px;}
+
+
+#menu ul{
+	list-style-type:none;
+	height:42px;
+	display:block;
+}
+#menu ul li{
+	width:auto;
+	height:32px;
+	float:left;}
+
+#menu li a{
+	color:#fff;
+	display:block;
+	float:left;
+    width:auto;
+	height:22px;
+	padding-top:5px;
+	text-transform:uppercase;
+	text-decoration:none;
+	text-align:center;
+	margin-left:30px;
+	text-shadow: 0.08em 0.08em 1em black}
+
+#menu li a:hover{
+	width:auto;
+	color:#f6e2bd;
+	/**text-shadow: 0.05em 0.05em 0.05em white; */
+	height:32px;
+	text-shadow: 0.08em 0.08em 1em black
+}
+
+.titulo{
+	color:#6d1b0f;
+	}
+h1{
+    color:#6d1b0f;
+    text-shadow: 0.08em 0.08em 0.05em black;
+}
+.titulo_right{
+	color:#6d1b0f;
+	}
+#bannertitulo{
+	width:1024px;
+	height:150px;}
+
+#contenido{
+	width:964px;
+	min-height:200px;
+	height:auto;
+    float: left;
+	overflow:auto;
+	padding:30px;
+	padding-top:15px;
+	background: rgb(255, 255, 255);
+/* RGBa with 0.6 opacity */
+	background: rgba(255, 255, 255, 0.85);
+	/* For IE 5.5 - 7*/
+07.
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#d8ffffff, endColorstr=#d8ffffff);
+08.
+/* For IE 8*/
+09.
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#d8ffffff, endColorstr=#d8ffffff)";
+box-shadow: 0px 10px 10px 2px #000;
+	}
+
+#columnamain{
+	width:655px;
+	padding-right:15px;
+	float:left;}
+
+#columnaright{
+
+	width:269px;
+	min-height:250px;
+	height:auto;
+	overflow:auto;
+	float:left;
+	padding-left:15px;}
+
+h2{
+	border-bottom:solid 1px #3e4344;
+	text-shadow: 0.08em 0.08em 0.05em black
+	}
+
+#slider{
+	border-bottom: 5px solid #3e4344;
+	width:1024px;
+	height:517px;
+	background-color:#960;}
+
+#submenu{
+	width:1024px;
+	height:168px;
+	float:left;
+	}
+
+
+#footer{ width:1009px;
+height:30px;
+background-color:#6d1b0f;
+color:#FFF;
+padding-left:15px;
+    float: left;
+padding-top:20px;
+font-size:11px;
+margin-bottom:15px;
+-moz-border-radius-bottomleft: 15px;
+border-bottom-left-radius: 15px;
+-moz-border-radius-bottompright: 15px;
+border-bottom-right-radius: 15px;
+box-shadow: 0px 2px 10px 2px #000;}
+
+#redes{
+	float:right;
+	margin-top:-5px;
+	margin-right:15px;}
+#redes a{
+	border:none;}
+
+.img{ float:left;}
+.wayaweb{ color:#CCC;
+text-decoration:none;}
+
+/*** set the width and height to match your images **/
+
+#slideshow {
+    position:relative;
+    height:517px;
+}
+
+#slideshow2 {
+    position:relative;
+    height:517px;
+	z-index: 1;
+}
+
+#slideshow DIV {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+    height: 517px;
+    background-color: #FFF;
+}
+
+#slideshow DIV.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow DIV.last-active {
+    z-index:9;
+}
+
+#slideshow DIV IMG {
+	width: 1024px;
+    height: 517px;
+    display: block;
+    border: 0;
+}
